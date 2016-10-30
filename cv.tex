@@ -9,6 +9,8 @@
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 \usepackage{bibentry}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{multicol}
 
 \title{\bfseries\Huge Michal Chovanec}
 \author{michal.nand@gmail.com, michal.chovanec@yandex.com}
@@ -18,60 +20,75 @@
 
 
 
-\begin{minipage}[ht]{0.48\textwidth}
-Ing. Michal Chovanec \\
-Staničná 11\\
-Lietavská Lúčka 01311\\
-Slovensko
+
+
+\begin{minipage}{0.5\textwidth}
+
+	Ing. Michal Chovanec, PhD. \\
+	Staničná 11\\
+	Lietavská Lúčka 01311\\
+	Slovakia
+
+\end{minipage} \hfill
+\begin{minipage}{0.45\textwidth}
+
+	\begin{flushright}
+	\includegraphics[width=0.4\textwidth]{photo.jpg}
+	\end{flushright}
+
 \end{minipage}
 
 
 
-\section*{Pracovné skúsenosti}
+
+
+\section*{Work experiences}
 \begin{tabular}{L!{\VRule}R}
+2016--today& research on Faculty of management science and informatics \\
+ 	& Artifical inteligence and learning systems  \\ [5pt] \\
 2015--2016& Ceit group, Žilina \\
-		  & pozícia ZIMS, výskum a vývoj v oblasti robotiky,  \\ [5pt] \\
-
+		  & ZIMS department, robotics research and development  \\ [5pt] \\
 2012--2013& Scheidt\&Bachmann, Žilina \\
-		  & pozícia Bahn, zabepečenie železničných priecestí (programovanie, Visual C++),  \\
-		  & VŠ prax, 6 mesiacov \\
+		  & Bahn department, railway security (solutions) systems (Visual C++ programming)
 
 \end{tabular}
 
 
-\section*{Vzdelanie}
+\section*{Education}
 \begin{tabular}{L!{\VRule}R}
-2013--dnes & Fakulta riadenia a informatiky, Aplikovaná informatika, PhD\\[5pt] \\
-
-2011--2013& Fakulta riadenia a informatiky, Počítačové inžinierstvo, Ing. \\
-	& Téma diplomovej práce : Operačný systém pre mikrokontroléry s jadrom cortex-m3\\[5pt] \\
-2007--2011& Fakulta riadenia a informatiky, Počítačové inžinierstvo, Bc.\\
+2013--2016& PhD degree : Faculty of management science and informatics, University of Žilina \\
+  & PhD thesis : Function approximation in Q-learning algorithms \\
+2011--2013& Master degree : Faculty of management science and informatics, Computer engineering, Ing. (Msc.) \\
+	& Diploma thesis : Operational system for arm cortex-m3 \\
+2007--2011& Bachelor degree : Faculty of management science and informatics, Computer engineering Bc. \\
+	& Bachelor thesis : FPGA audio player (Xilinx FPGA)
 \end{tabular}
 
-\section*{Počítačové znalosti}
+\section*{Computer skills}
 \begin{tabular}{L!{\VRule}R}
 C & expert \\
-C++, Ruby & pokročilý \\
-VHLD, Java & základy \\
-nástroje & GNU GCC, G++, Gnuplot, Sublime, Atom, OpenMPI, Linux, Latex \\
-mikrokontroléry & ARM Cortex M0..M4 (stm32), MSP430, AVR \\
-technológie & NRF70, Xbee, NVIDIA Cuda, Xilinx FPGA \\
-ďalšie & systémy reálneho času, umelá inteligencia, robotika, inerciálna navigácia, teória riadenia, adaptívne a učiace sa systémy
+C++, Ruby & advenced \\
+VHLD, Java & basic \\
+tools & GNU GCC, G++, Qt, Boost, Gnuplot, Sublime, Atom, OpenMPI, Linux, Latex \\
+microcontrollers & ARM Cortex M0..M4 (stm32), MSP430, AVR \\
+technologies & NRF70, Xbee, NVIDIA Cuda, Xilinx FPGA \\
+other & real time systems, artificial intelligence, robotics, inertial nevigation, controll theory, adaptive and learning systems
 \end{tabular}
 
 
-\section*{Ocenenia}
+\section*{Rewards}
 \begin{tabular}{L!{\VRule}R}
-2013 & Ing. štúdium ukončené s vyznamenaním \\
- & Cena dekana za najlepšiu diplomovú prácu \\
+2016 & Istrobot Line Follower L2 cathegory first place (robotics competition) \\
+2013 & Master degree with honours \\
+ & Dean price for best diploma thesis \\
  & ACM Certificate Gallery of the best \\
- & Cena Soitu za prácu súvisiacu s otvoreným softvérom, 3. miesto \\
-2011 & Cena dekana za najlepšiu bakalársku prácu
+ & Soit price for open sources diploma thesis, 3rd place \\
+2011 & Dean price for best bachelor thesis
 \end{tabular}
 
 \bibliographystyle{plain}
 \nobibliography{publication.bib}
-\section*{Publikácie}
+\section*{Publications}
 \begin{tabular}{L!{\VRule}R}
 
 2012 & $[1]$ Preemptívny multitasking pre mikrokontroléry s jadrom ARM Cortex M3 Michal Chovanec. - 2012 In: Otvorený softvér vo vzdelávaní, výskume a v IT riešeniach S. 27-32 zborník príspevkov medzinárodnej konferencie OSSConf 2012 2.-4. júla 2013 Žilina, Slovensko Bratislava Spoločnosť pre otvorené informačné technológie 2012, ISBN 978-80-970457-2-2 \\[5pt]
@@ -85,37 +102,41 @@ In: FedCSIS : proceedings of the 2014 federated conference on Computer science a
 & $[7]$ Investigation of the gyro-sensor contribution to the straight movement of vehicle [Analýza vplyvu gyroskopického senzora pri priamom pohybe vozidla] / Michal Hodoň, Michal Chovanec.  \\[5pt]
 2015 & $[8]$ Required value classification using Kohonen neural network = Klasifikácia žiadanej hodnoty Kohonenovou neurónovou sieťou / Michal Chovanec.
 In: Otvorený softvér vo vzdelávaní, výskume a v IT riešeniach : zborník príspevkov medzinárodnej konferencie OSSConf 2015 : 1.-3. júla 2015 Žilina, Slovensko. - Žilina: Žilinská univerzita, 2015. - ISBN 978-80-970457-7-7. \\[5pt]
-
+2016 & $[9]$ Water level monitoring based on the acoustic signal using the neural network / Veronika Olesnanikova, Karpiš Ondrej, Chovanec Michal, Šarafín Peter, Žalman Róbert
+In: Information and digital technologies 2016 proceedings of the international conference : 5-7 July 2016 Rzeszow, Poland. - [S.l.]: IEEE, 2016. - ISBN 978-1-4673-8860-3  \\[5pt]
+& $[10]$ Aeris Robots Laboratory with Dynamic Environment / Michal Chovanec, Lukáš Čechovič, Lukáš Mandák, Robotics in Education Research and Practices for Robotics in STEM Education ISBN: 978-3-319-42974-8 (Print) 978-3-319-42975-5 (Online), pages 169-180  \\[5pt]
 
 \end{tabular}
 
-\section*{Záujmy}
-robotika (umelá inteligancia, riadenie v reálnom čase),
-outdoor (turistika, beh, bouldering, jaskyniarstvo, prežitie v divočine a riešenie život ohrozujúcich situacií),
-bojové umenia (lukostrelba, aikidó, kenjutsu), hudba, joga
+\section*{Interests}
+robotics (artificial intelligence, real time controll),
+outdoor (hiking, running, bouldering, caving, survival and critical situations),
+martial arts (archery, aikido, kenjutsu), music, yoga
 
-\section*{Vlastné projekty}
+\section*{Personal projects}
 
-Práca v oblasti robotiky : vývoj a testovanie riadiacich algoritmov, neurónové
-siete : programovanie v embedded C, simulácie C++ alebo ruby
+Work in robotics  : research and implementation controll algorithms, neural networks,
+programming in embedded C (std 99), simulations in C++ (std 11) or Ruby
 \begin{itemize}
-\item \href{https://github.com/michalnand/motoko\_after\_math\_linefollower}{zdrojové súbory https://github.com/michalnand/motoko\_after\_math\_linefollower}
+\item \href{https://github.com/michalnand/motoko\_after\_math\_linefollower}{source code https://github.com/michalnand/motoko\_after\_math\_linefollower}
 \item \href{http://letsmakerobots.com/node/43789}{web1 : http://letsmakerobots.com/node/43789}
 \item \href{http://letsmakerobots.com/node/39958}{web2 : http://letsmakerobots.com/node/39958}
 \item \href{https://www.youtube.com/watch?v=8sskJN\_zuko}{video : https://www.youtube.com/watch?v=8sskJN\_zuko}
 \end{itemize}
 
-Operačný systém reálneho času (diplomová práca, ďalej rozvíjaná)
+Real time operating system (diploma thesis)
+
 \begin{itemize}
-\item \href{https://github.com/michalnand/suzuha\_os}{zdrojové súbory : https://github.com/michalnand/suzuha\_os}
-\item \href{https://fedcsis.org/proceedings/2015/pliks/146.pdf}{publikované : https://fedcsis.org/proceedings/2015/pliks/146.pdf}
+\item \href{https://github.com/michalnand/suzuha\_os}{source code : https://github.com/michalnand/suzuha\_os}
+\item \href{https://fedcsis.org/proceedings/2015/pliks/146.pdf}{publication : https://fedcsis.org/proceedings/2015/pliks/146.pdf}
 \end{itemize}
 
-Dizertačná práca - aproximácia funkcie ohodnotení v algoritmoch Q-learning,
-oblasť reinforcement learning umelej inteligencie
+Dissertation research data - Q function approximation in Q-learning algorithms
+, reinforcement learning
 \begin{itemize}
-\item \href{https://github.com/michalnand/q\_learning}{zdrojové súbory : https://github.com/michalnand/q\_learning}
-\item \href{https://github.com/michalnand/q\_learning/blob/master/doc/presentation\_march\_2016\_ktk/presentation.pdf}{zhrnutie : https://github.com/michalnand/q\_learning/blob/master/doc\\
+\item \href{https://github.com/michalnand/sparse\_memory}{current research : https://github.com/michalnand/sparse\_memory}
+\item \href{https://github.com/michalnand/q\_learning}{source code : https://github.com/michalnand/q\_learning}
+\item \href{https://github.com/michalnand/q\_learning/blob/master/doc/presentation\_march\_2016\_ktk/presentation.pdf}{summary : https://github.com/michalnand/q\_learning/blob/master/doc\\
                   /presentation\_march\_2016\_ktk/presentation.pdf}
 \end{itemize}
 
