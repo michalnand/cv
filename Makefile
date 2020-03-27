@@ -2,7 +2,4 @@
 latexfile = cv
 
 all :
-	rm bin/$(latexfile).pdf -rf
-	pdfcslatex $(latexfile).tex
-
-	mv $(latexfile).pdf bin/. 
+	pdflatex $(latexfile).tex
